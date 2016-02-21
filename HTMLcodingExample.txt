@@ -1,0 +1,107 @@
+
+
+
+<!--HTML kod på Volvos Hemsida för jobb/exjobb-->  
+<!--http://www.volvocars.com/intl/about/our-company/careers/job-search--> 
+
+<div class="cl-list-item filter-item" data-country="SE" data-category="17">
+    <dl class="cl-list-info">
+        <dt>Thesis Work: Material trends in passenger cars</dt>
+        <dd>Gothenburg , Sweden</dd>
+        <dd>Friday, February 26, 2016</dd> 
+    </dl>
+    <div class="cl-list-cta">
+        <a href="/intl/about/our-company/careers/job-search/jobs/rd16027" class="button button-small">Read more</a>
+    </div>
+</div>
+
+<!--HTML kod på ÅFs Hemsida för jobb/exjobb-->  
+<!--http://www.afconsult.com/sv/jobba-hos-oss/lediga-jobb/--> 
+
+</a>
+    </div>
+    <div class="block col regular-12">
+        <a href="/sv/jobba-hos-oss/lediga-jobb/job-openings/2694-testautomatiserare-inom-it/">
+    <div class="col regular-6">Testautomatiserare inom IT</div>
+    <div class="col regular-3">Stockholm, Sweden</div>
+    <div class="col regular-3">2016-02-26</div>
+</a>
+
+<!--HTML kod på Autoliv Hemsida för jobb/exjobb-->  
+<!--https://autoliv.csod.com/ats/careersite/search.aspx--> 
+
+<tr>                               
+    <td>
+        <a id="ctl00_siteContent_widgetLayout_rptWidgets_ctl01_widgetContainer_ctl00_rptResultsTable_ctl00_rptResultsTableCell_ctl00_lnkCellLink" href="JobDetails.aspx?id=958">(Sr.) Project Buyer</a>
+        <span class="FieldValue">&nbsp;-&nbsp;( China | Purchasing | req958&nbsp;)</span>
+    </td>
+    <td>
+        <span id="ctl00_siteContent_widgetLayout_rptWidgets_ctl01_widgetContainer_ctl00_rptResultsTable_ctl00_rptResultsTableCell_ctl01_lblCellLabel">China</span>
+    </td>
+    <td>
+        <span id="ctl00_siteContent_widgetLayout_rptWidgets_ctl01_widgetContainer_ctl00_rptResultsTable_ctl00_rptResultsTableCell_ctl02_lblCellLabel">2/15/2016</span>
+    </td>
+    <td>
+        <span id="ctl00_siteContent_widgetLayout_rptWidgets_ctl01_widgetContainer_ctl00_rptResultsTable_ctl00_rptResultsTableCell_ctl03_lblCellLabel">Purchasing</span>
+    </td>
+</tr>
+
+<!--HTML kod på Ericssons för jobb/exjobb-->  
+<!--https://jobs.ericsson.com/search/?q=thesis&locationsearch=SE--> 
+
+<td class="colTitle" headers="hdrTitle">
+    <span class="jobTitle">
+        <a class="jobTitle-link" href="/job/Stockholm-Master%E2%80%99s-Thesis%2C-HEVC-Video-Encoder-Improvements/326052000/">Master’s Thesis, HEVC Video Encoder Improvements</a>
+    </span>
+    <div class="jobdetail-phone visible-phone visible-sm">
+        <span class="jobLocation">Stockholm, Stockholm, SE</span>
+        <span class="jobDate">Feb 10, 2016
+        </span>
+        <span class="jobDistance">0.00 mi</span>
+        <span class="jobDepartment">IT</span>
+        <span class="jobFacility"></span>
+        <span class="jobShifttype"></span>
+        <span class="jobState"></span>
+        <span class="jobUrlTitle">Stockholm-Master%E2%80%99s-Thesis%2C-HEVC-Video-Encoder-Improvements</span>
+    </div>
+</td>
+
+<!--HTML kod på SKFs för jobb/exjobb-->  
+<!--https://skf.tms.hrdepartment.com/cgi-bin/a/searchjobs_quick.cgi?kand=&geog=custom__75&geog=custom__8%2C8%2C8%2C8%2C8%2C8%2C8%2C8%2C8%2C8%2C8%2C8&geog=custom__59&geog=custom__74&country=SE&qty=25&sj=1&order=jobs.timedate+DESC&search=Search+Jobs--> 
+
+<tr>
+  <td class="tdcolor divider" valign="top">
+    <a href="/jobs/3657/Master-Thesis-Characterisation-of-induction-hardened-componentsSE-Gothenburg?lcid=sv-SE" class="reg_js"
+      >Master Thesis - Characterisation of induction hardened components</a>
+  </td>
+  <td class="tdcolor divider" valign="top">SE - Gothenburg , Gothenburg  Västra Götaland SE 41550<br></td>
+  <td class="tdcolor divider" valign="top">05/02/16</td>
+</tr>
+
+
+<!--HTML kod på SAABs för jobb/exjobb-->  
+<!--http://saabgroup.com/career/vacancies/?&c=Sweden--> 
+
+<li>
+    <span class="title">
+        <a href="/sv/career/job-opportunities/examensarbete-matetal-systemarkitektur/">
+            Examensarbete: Mätetal Systemarkitektur                     
+        </a>
+    </span>
+    <span class="location">
+        Linköping
+    </span>
+    <span class="date">
+        31-Mar-2016
+    </span>
+</li>   
+
+
+
+
+
+
+
+
+
+

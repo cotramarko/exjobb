@@ -20,7 +20,6 @@ browser.get("http://www.afconsult.com/sv/jobba-hos-oss/lediga-jobb/")
 
 #time.sleep(1)    #might need to explicitly wait for website to load
 
-#element has to be in view to click -> scroll to element
 find_button = browser.find_element_by_id("""dk1-combobox""").click()
 option = browser.find_element_by_id("dk1--2024534255__jobFilters").click()
 

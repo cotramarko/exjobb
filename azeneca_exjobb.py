@@ -9,6 +9,7 @@ from selenium.webdriver.common.by import By
 import time
 import os
 
+import json_append
 
 chromedriver = "/Users/fredrikjacobson/Desktop/code/chromedriver" #change to local chromedriver location
 os.environ["webdriver.chrome.driver"] = chromedriver
@@ -28,6 +29,7 @@ time.sleep(1)
 browser.find_element_by_class_name('submit').click()
 
 job_list = browser.find_elements_by_class_name('job-res-description')
+list_of_thesis = []
 
 for l in job_list:
     
@@ -36,5 +38,8 @@ for l in job_list:
         location = l.find_element_by_class_name('locations')
         print('Title: {}\nLocation: {}\nLink: {}\n\n'.format(title.text, location.text, title.get_attribute('href')))
 
+        list_of_thesis.append(dict(title= title.text, location = location.text, link=title.get_attribute('href')))
 
 
+if list_of_thesis:
+    json_append.update_json(list_of_thesis)

@@ -9,6 +9,7 @@ from selenium.webdriver.common.by import By
 import time
 import os
 
+import json_append
 
 chromedriver = "/Users/fredrikjacobson/Desktop/code/chromedriver" #change to local chromedriver location
 os.environ["webdriver.chrome.driver"] = chromedriver
@@ -29,9 +30,15 @@ browser.find_element_by_xpath("""//*[@data-option-array-index='4']""").click()
 time.sleep(0.5) #time for content to load
 job_list = browser.find_elements_by_xpath("""//*[@id="jobOffers"]/tbody/tr""")
 
+list_of_thesis = []
+
 for l in job_list:
     #print (l.text)
     title = l.find_element_by_tag_name('a')
     _, location, department, job_type, _  = l.find_elements_by_tag_name('td')
     print('Title: {}\nLocation: {}\nDepartment: {}\nLink: {}\n\n'.format(title.text, location.text, department.text, title.get_attribute('href')))
 
+    list_of_thesis.append(dict(title= title.text, location = location.text, link=title.get_attribute('href')))
+
+if list_of_thesis:
+    json_append.update_json(list_of_thesis)

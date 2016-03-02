@@ -1,0 +1,12 @@
+extends layout
+
+block content
+    table
+        each kw in data
+            // li= kw.from + " " + kw.dest + " " + kw.time + " " + kw.team + " " + kw.car
+            tr
+                td= kw.from
+                td= kw.dest
+                td= kw.time
+                td= kw.team
+                td= kw.car

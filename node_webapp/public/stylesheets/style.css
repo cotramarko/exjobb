@@ -1,0 +1,109 @@
+body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+a {
+  color: #00B7FF;
+}
+#search {
+  text-align: center;
+  width:500px;
+  height: 70px;
+  font-size:3.5em;
+  border-radius:8px;
+}
+
+.grid { margin:1em auto; border-collapse:collapse }
+.grid td {
+    cursor:pointer;
+    width:30px; height:30px;
+    border:1px solid #ccc;
+    text-align:center;
+    font-family:sans-serif; font-size:13px;
+    background-color:green;
+}
+.grid td.clicked {
+    background-color:red;
+    font-weight:bold; color:black;
+}
+
+.ui-corner-all,
+.ui-corner-top,
+.ui-corner-left,
+.ui-corner-tl {
+  border-top-left-radius: 0px !important;
+}
+
+.tabs {
+  width: 650px;  
+  float: none;
+  list-style: none;
+  position: relative;
+  margin: 80px 0 0 10px;
+  text-align: left;
+  li {
+    float: left;
+    display: block;
+  }
+  input[type="radio"] {
+    position: absolute;
+    top: -9999px;
+    left: -9999px;
+  }
+  label {
+    display: block;
+    padding: 14px 21px;
+    border-radius: 2px 2px 0 0;
+    font-size: 20px;
+    font-weight: normal;
+    text-transform: uppercase;
+    background: $tabs-base-color;
+    cursor: pointer;
+    position: relative;
+    top: 4px; 
+    @include transition(all 0.2s ease-in-out);
+    &:hover {
+      background: darken($tabs-base-color, 10);
+    }
+  }
+  .tab-content{
+    z-index: 2;
+    display: none; 
+    overflow: hidden;
+    width: 100%;
+    font-size: 17px;
+    line-height: 25px;
+    padding: 25px;  
+    position: absolute;
+    top: 53px;
+    left: 0; 
+    background: darken($tabs-base-color, 15);
+  }
+  //The Magic
+  [id^="tab"]:checked + label { 
+    top: 0;
+    padding-top: 17px; 
+    background: darken($tabs-base-color, 15); 
+  }
+  [id^="tab"]:checked ~ [id^="tab-content"] {
+    display: block;
+  }
+}
+p.link {
+  clear: both;
+  margin: 380px 0 0 15px;
+  a {
+    text-transform: uppercase;
+    text-decoration: none;
+    display: inline-block;
+    color: #fff;
+    padding: 5px 10px;
+    margin: 0 5px;
+    background-color: darken($tabs-base-color, 15);
+    @include transition(all 0.2s ease-in);
+    &:hover {
+      background-color: darken($tabs-base-color, 20);
+    }
+  }
+} 

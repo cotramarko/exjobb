@@ -1,0 +1,96 @@
+extends layout
+
+block content
+  h1= title
+  p Welcome to #{title}
+
+  
+  fieldset
+    // Form Name
+    legend Form Name
+    // Text input
+    .form-group
+      label.col-md-4.control-label(for='from') Från
+      .col-md-4
+        input#from.form-control.input-md(name='from', type='text', placeholder='ex. Hvitfeldska', required='')
+        label#from_error.error(for='from') This field is required.    
+    // Text input
+    .form-group
+      label.col-md-4.control-label(for='dest') Till
+      .col-md-4
+        input#dest.form-control.input-md(name='dest', type='text', placeholder='ex. Konserthuset', required='')
+        label#dest_error.error(for='dest') This field is required.
+    // Select Basic
+    .form-group
+      label.col-md-4.control-label(for='time') Tidpunkt
+      .col-md-4
+        select#time.form-control(name='time')
+          option(value='08:00') 08:00
+          option(value='09:00') 09:00
+          option(value='10:00') 10:00
+          option(value='11:00') 11:00
+          option(value='12:00') 12:00
+          option(value='13:00') 13:00
+          option(value='14:00') 14:00
+          option(value='15:00') 15:00
+          option(value='16:00') 16:00
+          option(value='17:00') 17:00
+          
+    // Select Basic
+    .form-group
+      label.col-md-4.control-label(for='team') Korps
+      .col-md-4
+        select#team.form-control(name='team')
+          option(value='Tåsen') Tåsen
+          option(value='Arskog') Arskog
+    // Select Basic
+    .form-group
+      label.col-md-4.control-label(for='car') Fordon
+      .col-md-4
+        select#car.form-control(name='car')
+          option(value='1') 1
+          option(value='2') 2
+          option(value='3') 3
+    // Button
+    .form-group
+      label.col-md-4.control-label(for='submit')
+      .col-md-4
+        button#submit.btn.button(name='submit', type='submit') submit
+        label#submit_error.error(for='submit') Körningen är bokad! Testa annan tid eller bil
+  #contact_form
+
+
+  table.grid
+    tr
+      td 8
+      td 9
+      td 10
+      td 11
+      td 12
+      td 13
+      td 14
+      td 15
+      td 16
+      td 17
+    tr
+      td 8
+      td 9
+      td 10
+      td 11
+      td 12
+      td 13
+      td 14
+      td 15
+      td 16
+      td 17
+    tr
+      td 8
+      td 9
+      td 10
+      td 11
+      td 12
+      td 13
+      td 14
+      td 15
+      td 16
+      td 17

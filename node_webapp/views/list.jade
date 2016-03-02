@@ -1,0 +1,10 @@
+extends layout
+
+block content
+    table
+        each kw in data
+            tr
+                td= kw.title
+                td= kw.location
+                td= kw.link
+                

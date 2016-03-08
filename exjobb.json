@@ -1,322 +1,135 @@
 [
     {
+        "company": "Volvo Cars",
         "link": "http://www.volvocars.com/intl/about/our-company/careers/job-search/jobs/rd16084",
         "location": "Gothenburg , Sweden",
-        "title": "Thesis: Offline Active Safety Sensor Data Processing Parameter Estimation"
+        "title": "Thesis: Offline Active Safety Sensor Data Processing Parameter Estimation",
+        "img": "images/logos/vcc.png"
     },
     {
+        "company": "Volvo Cars",
         "link": "http://www.volvocars.com/intl/about/our-company/careers/job-search/jobs/rd16027",
         "location": "Gothenburg , Sweden",
-        "title": "Thesis Work: Material trends in passenger cars"
+        "title": "Thesis Work: Material trends in passenger cars",
+        "img": "images/logos/vcc.png"
     },
     {
+        "company": "Volvo Cars",
         "link": "http://www.volvocars.com/intl/about/our-company/careers/job-search/jobs/rd16044",
         "location": "Gothenburg , Sweden",
-        "title": "Thesis Work: Cabin air quality - Particles"
+        "title": "Thesis Work: Cabin air quality - Particles",
+        "img": "images/logos/vcc.png"
     },
     {
+        "company": "ABB",
         "link": "http://new.abb.com/se/jobba-hos-oss/jobbannonser/details/55417627/thesis-work-in-electric-power-systems",
         "location": "Västerås\nVaestmanland County\nSweden",
-        "title": "Thesis Work in Electric Power Systems"
+        "title": "Thesis Work in Electric Power Systems",
+        "img": "images/logos/abb.png"
     },
     {
+        "company": "ABB",
         "link": "http://new.abb.com/se/jobba-hos-oss/jobbannonser/details/58293509/examensarbete-inom-hr-kandidatupplevelse",
         "location": "Västerås\nVästmanlands län\nSverige",
-        "title": "Examensarbete inom HR - kandidatupplevelse"
+        "title": "Examensarbete inom HR - kandidatupplevelse",
+        "img": "images/logos/abb.png"
     },
     {
+        "company": "ABB",
         "link": "http://new.abb.com/se/jobba-hos-oss/jobbannonser/details/58257984/examensarbete",
         "location": "Ludvika\nDalarnas County\nSweden",
-        "title": "Examensarbete"
+        "title": "Examensarbete",
+        "img": "images/logos/abb.png"
     },
     {
+        "company": "ABB",
         "link": "http://new.abb.com/se/jobba-hos-oss/jobbannonser/details/58233427/thesis-work-motor-diagnostics",
         "location": "Västerås\nVaestmanland County\nSweden",
-        "title": "Thesis work motor diagnostics"
+        "title": "Thesis work motor diagnostics",
+        "img": "images/logos/abb.png"
     },
     {
+        "company": "ABB",
         "link": "http://new.abb.com/se/jobba-hos-oss/jobbannonser/details/57145538/thesis-work-in-control-optimization-and-analytics",
         "location": "Västerås\nVaestmanland County\nSweden",
-        "title": "Thesis work in Control- Optimization and Analytics"
+        "title": "Thesis work in Control- Optimization and Analytics",
+        "img": "images/logos/abb.png"
     },
     {
+        "company": "ABB",
         "link": "http://new.abb.com/se/jobba-hos-oss/jobbannonser/details/57970395/master-thesis-project-5-positions-at-abb-software-and-communications-for-smart-home-towards-internet-of-things-services-and-people",
         "location": "Västerås\nVaestmanland County\nSweden",
-        "title": "Master Thesis Project (5 positions) at ABB– Software and Communications for Smart Home towards Internet of Things, Services and People"
+        "title": "Master Thesis Project (5 positions) at ABB– Software and Communications for Smart Home towards Internet of Things, Services and People",
+        "img": "images/logos/abb.png"
     },
     {
+        "company": "ABB",
         "link": "http://new.abb.com/se/jobba-hos-oss/jobbannonser/details/57536693/human-computer-and-interaction",
         "location": "Västerås\nVaestmanland County\nSweden",
-        "title": "Human Computer and Interaction"
+        "title": "Human Computer and Interaction",
+        "img": "images/logos/abb.png"
     },
     {
+        "company": "Boliden",
         "link": "https://boliden.csod.com/ats/careersite/JobDetails.aspx?id=749",
         "location": " Rönnskär, Sweden ",
-        "title": "Development/Laboratory: Determination of measurement uncertainty"
+        "title": "Development/Laboratory: Determination of measurement uncertainty",
+        "img": "images/logos/boliden.jpg"
     },
     {
+        "company": "Astra Zeneca",
         "link": "http://jobs.astrazeneca.com/jobs/details/l1rSOD000002BY-diploma-worker-30-hp-astrazeneca-sodertalje",
         "location": "Sweden (Sodertalje)",
-        "title": "Diploma Worker, 30 HP, AstraZeneca Södertälje"
+        "title": "Diploma Worker, 30 HP, AstraZeneca Södertälje",
+        "img": "images/logos/azeneca.jpg"
     },
     {
+        "company": "Billerudkorsnäs",
         "link": "https://billerudkorsnas.easycruit.com/intranet/exjobb/vacancy/1371393/14449",
         "location": "Solna",
-        "title": "Expression of interest - Thesis Project at BillerudKorsnäs Head Office"
+        "title": "Expression of interest - Thesis Project at BillerudKorsnäs Head Office",
+        "img": "images/logos/billerud.png"
     },
     {
+        "company": "Billerudkorsnäs",
         "link": "https://billerudkorsnas.easycruit.com/intranet/exjobb/vacancy/1415116/99425",
         "location": "Gävle",
-        "title": "Expression of interest - Thesis Project at Gävle"
+        "title": "Expression of interest - Thesis Project at Gävle",
+        "img": "images/logos/billerud.png"
     },
     {
+        "company": "Billerudkorsnäs",
         "link": "https://billerudkorsnas.easycruit.com/intranet/exjobb/vacancy/1415130/99397",
         "location": "Skärblacka",
-        "title": "Expression of interest - Thesis Project at Skärblacka"
+        "title": "Expression of interest - Thesis Project at Skärblacka",
+        "img": "images/logos/billerud.png"
     },
     {
+        "company": "Billerudkorsnäs",
         "link": "https://billerudkorsnas.easycruit.com/intranet/exjobb/vacancy/1415158/99399",
         "location": "Karlsborg",
-        "title": "Expression of interest - Thesis Project at Karlsborg"
+        "title": "Expression of interest - Thesis Project at Karlsborg",
+        "img": "images/logos/billerud.png"
     },
     {
+        "company": "Billerudkorsnäs",
         "link": "https://billerudkorsnas.easycruit.com/intranet/exjobb/vacancy/1415184/99395",
         "location": "Gruvön",
-        "title": "Expression of interest - Thesis Project at Gruvön"
+        "title": "Expression of interest - Thesis Project at Gruvön",
+        "img": "images/logos/billerud.png"
     },
     {
+        "company": "Billerudkorsnäs",
         "link": "https://billerudkorsnas.easycruit.com/intranet/exjobb/vacancy/1415194/99383",
         "location": "Frövi/Rockhammar",
-        "title": "Expression of interest - Thesis Project at Frövi/Rockhammar"
+        "title": "Expression of interest - Thesis Project at Frövi/Rockhammar",
+        "img": "images/logos/billerud.png"
     },
     {
+        "company": "Billerudkorsnäs",
         "link": "https://billerudkorsnas.easycruit.com/intranet/exjobb/vacancy/1433962/99401",
         "location": "Pietarsaari/Tervasaari",
-        "title": "Expression of interest - Thesis Project Finland"
-    },
-    {
-        "link": "http://www.volvocars.com/intl/about/our-company/careers/job-search/jobs/rd16084",
-        "location": "Gothenburg , Sweden",
-        "title": "Thesis: Offline Active Safety Sensor Data Processing Parameter Estimation"
-    },
-    {
-        "link": "http://www.volvocars.com/intl/about/our-company/careers/job-search/jobs/rd16027",
-        "location": "Gothenburg , Sweden",
-        "title": "Thesis Work: Material trends in passenger cars"
-    },
-    {
-        "link": "http://www.volvocars.com/intl/about/our-company/careers/job-search/jobs/rd16044",
-        "location": "Gothenburg , Sweden",
-        "title": "Thesis Work: Cabin air quality - Particles"
-    },
-    {
-        "link": "http://www.volvocars.com/intl/about/our-company/careers/job-search/jobs/rd16084",
-        "location": "Gothenburg , Sweden",
-        "title": "Thesis: Offline Active Safety Sensor Data Processing Parameter Estimation"
-    },
-    {
-        "link": "http://www.volvocars.com/intl/about/our-company/careers/job-search/jobs/rd16027",
-        "location": "Gothenburg , Sweden",
-        "title": "Thesis Work: Material trends in passenger cars"
-    },
-    {
-        "link": "http://www.volvocars.com/intl/about/our-company/careers/job-search/jobs/rd16044",
-        "location": "Gothenburg , Sweden",
-        "title": "Thesis Work: Cabin air quality - Particles"
-    },
-    {
-        "link": "http://www.volvocars.com/intl/about/our-company/careers/job-search/jobs/rd16084",
-        "location": "Gothenburg , Sweden",
-        "title": "Thesis: Offline Active Safety Sensor Data Processing Parameter Estimation"
-    },
-    {
-        "link": "http://www.volvocars.com/intl/about/our-company/careers/job-search/jobs/rd16027",
-        "location": "Gothenburg , Sweden",
-        "title": "Thesis Work: Material trends in passenger cars"
-    },
-    {
-        "link": "http://www.volvocars.com/intl/about/our-company/careers/job-search/jobs/rd16044",
-        "location": "Gothenburg , Sweden",
-        "title": "Thesis Work: Cabin air quality - Particles"
-    },
-    {
-        "link": "http://www.volvocars.com/intl/about/our-company/careers/job-search/jobs/rd16084",
-        "location": "Gothenburg , Sweden",
-        "title": "Thesis: Offline Active Safety Sensor Data Processing Parameter Estimation"
-    },
-    {
-        "link": "http://www.volvocars.com/intl/about/our-company/careers/job-search/jobs/rd16027",
-        "location": "Gothenburg , Sweden",
-        "title": "Thesis Work: Material trends in passenger cars"
-    },
-    {
-        "link": "http://www.volvocars.com/intl/about/our-company/careers/job-search/jobs/rd16044",
-        "location": "Gothenburg , Sweden",
-        "title": "Thesis Work: Cabin air quality - Particles"
-    },
-    {
-        "link": "http://www.volvocars.com/intl/about/our-company/careers/job-search/jobs/rd16084",
-        "location": "Gothenburg , Sweden",
-        "title": "Thesis: Offline Active Safety Sensor Data Processing Parameter Estimation"
-    },
-    {
-        "link": "http://www.volvocars.com/intl/about/our-company/careers/job-search/jobs/rd16027",
-        "location": "Gothenburg , Sweden",
-        "title": "Thesis Work: Material trends in passenger cars"
-    },
-    {
-        "link": "http://www.volvocars.com/intl/about/our-company/careers/job-search/jobs/rd16044",
-        "location": "Gothenburg , Sweden",
-        "title": "Thesis Work: Cabin air quality - Particles"
-    },
-    {
-        "link": "http://www.volvocars.com/intl/about/our-company/careers/job-search/jobs/rd16084",
-        "location": "Gothenburg , Sweden",
-        "title": "Thesis: Offline Active Safety Sensor Data Processing Parameter Estimation"
-    },
-    {
-        "link": "http://www.volvocars.com/intl/about/our-company/careers/job-search/jobs/rd16027",
-        "location": "Gothenburg , Sweden",
-        "title": "Thesis Work: Material trends in passenger cars"
-    },
-    {
-        "link": "http://www.volvocars.com/intl/about/our-company/careers/job-search/jobs/rd16044",
-        "location": "Gothenburg , Sweden",
-        "title": "Thesis Work: Cabin air quality - Particles"
-    },
-    {
-        "link": "http://www.volvocars.com/intl/about/our-company/careers/job-search/jobs/rd16084",
-        "location": "Gothenburg , Sweden",
-        "title": "Thesis: Offline Active Safety Sensor Data Processing Parameter Estimation"
-    },
-    {
-        "link": "http://www.volvocars.com/intl/about/our-company/careers/job-search/jobs/rd16027",
-        "location": "Gothenburg , Sweden",
-        "title": "Thesis Work: Material trends in passenger cars"
-    },
-    {
-        "link": "http://www.volvocars.com/intl/about/our-company/careers/job-search/jobs/rd16044",
-        "location": "Gothenburg , Sweden",
-        "title": "Thesis Work: Cabin air quality - Particles"
-    },
-    {
-        "link": "http://www.volvocars.com/intl/about/our-company/careers/job-search/jobs/rd16084",
-        "location": "Gothenburg , Sweden",
-        "title": "Thesis: Offline Active Safety Sensor Data Processing Parameter Estimation"
-    },
-    {
-        "link": "http://www.volvocars.com/intl/about/our-company/careers/job-search/jobs/rd16027",
-        "location": "Gothenburg , Sweden",
-        "title": "Thesis Work: Material trends in passenger cars"
-    },
-    {
-        "link": "http://www.volvocars.com/intl/about/our-company/careers/job-search/jobs/rd16044",
-        "location": "Gothenburg , Sweden",
-        "title": "Thesis Work: Cabin air quality - Particles"
-    },
-    {
-        "link": "http://www.volvocars.com/intl/about/our-company/careers/job-search/jobs/rd16084",
-        "location": "Gothenburg , Sweden",
-        "title": "Thesis: Offline Active Safety Sensor Data Processing Parameter Estimation"
-    },
-    {
-        "link": "http://www.volvocars.com/intl/about/our-company/careers/job-search/jobs/rd16027",
-        "location": "Gothenburg , Sweden",
-        "title": "Thesis Work: Material trends in passenger cars"
-    },
-    {
-        "link": "http://www.volvocars.com/intl/about/our-company/careers/job-search/jobs/rd16044",
-        "location": "Gothenburg , Sweden",
-        "title": "Thesis Work: Cabin air quality - Particles"
-    },
-    {
-        "link": "http://www.volvocars.com/intl/about/our-company/careers/job-search/jobs/rd16084",
-        "location": "Gothenburg , Sweden",
-        "title": "Thesis: Offline Active Safety Sensor Data Processing Parameter Estimation"
-    },
-    {
-        "link": "http://www.volvocars.com/intl/about/our-company/careers/job-search/jobs/rd16027",
-        "location": "Gothenburg , Sweden",
-        "title": "Thesis Work: Material trends in passenger cars"
-    },
-    {
-        "link": "http://www.volvocars.com/intl/about/our-company/careers/job-search/jobs/rd16044",
-        "location": "Gothenburg , Sweden",
-        "title": "Thesis Work: Cabin air quality - Particles"
-    },
-    {
-        "link": "http://www.volvocars.com/intl/about/our-company/careers/job-search/jobs/rd16084",
-        "location": "Gothenburg , Sweden",
-        "title": "Thesis: Offline Active Safety Sensor Data Processing Parameter Estimation"
-    },
-    {
-        "link": "http://www.volvocars.com/intl/about/our-company/careers/job-search/jobs/rd16027",
-        "location": "Gothenburg , Sweden",
-        "title": "Thesis Work: Material trends in passenger cars"
-    },
-    {
-        "link": "http://www.volvocars.com/intl/about/our-company/careers/job-search/jobs/rd16044",
-        "location": "Gothenburg , Sweden",
-        "title": "Thesis Work: Cabin air quality - Particles"
-    },
-    {
-        "link": "http://www.volvocars.com/intl/about/our-company/careers/job-search/jobs/rd16084",
-        "location": "Gothenburg , Sweden",
-        "title": "Thesis: Offline Active Safety Sensor Data Processing Parameter Estimation"
-    },
-    {
-        "link": "http://www.volvocars.com/intl/about/our-company/careers/job-search/jobs/rd16027",
-        "location": "Gothenburg , Sweden",
-        "title": "Thesis Work: Material trends in passenger cars"
-    },
-    {
-        "link": "http://www.volvocars.com/intl/about/our-company/careers/job-search/jobs/rd16044",
-        "location": "Gothenburg , Sweden",
-        "title": "Thesis Work: Cabin air quality - Particles"
-    },
-    {
-        "link": "http://www.volvocars.com/intl/about/our-company/careers/job-search/jobs/rd16084",
-        "location": "Gothenburg , Sweden",
-        "title": "Thesis: Offline Active Safety Sensor Data Processing Parameter Estimation"
-    },
-    {
-        "link": "http://www.volvocars.com/intl/about/our-company/careers/job-search/jobs/rd16027",
-        "location": "Gothenburg , Sweden",
-        "title": "Thesis Work: Material trends in passenger cars"
-    },
-    {
-        "link": "http://www.volvocars.com/intl/about/our-company/careers/job-search/jobs/rd16044",
-        "location": "Gothenburg , Sweden",
-        "title": "Thesis Work: Cabin air quality - Particles"
-    },
-    {
-        "link": "http://www.volvocars.com/intl/about/our-company/careers/job-search/jobs/rd16084",
-        "location": "Gothenburg , Sweden",
-        "title": "Thesis: Offline Active Safety Sensor Data Processing Parameter Estimation"
-    },
-    {
-        "link": "http://www.volvocars.com/intl/about/our-company/careers/job-search/jobs/rd16027",
-        "location": "Gothenburg , Sweden",
-        "title": "Thesis Work: Material trends in passenger cars"
-    },
-    {
-        "link": "http://www.volvocars.com/intl/about/our-company/careers/job-search/jobs/rd16044",
-        "location": "Gothenburg , Sweden",
-        "title": "Thesis Work: Cabin air quality - Particles"
-    },
-    {
-        "link": "http://www.volvocars.com/intl/about/our-company/careers/job-search/jobs/rd16084",
-        "location": "Gothenburg , Sweden",
-        "title": "Thesis: Offline Active Safety Sensor Data Processing Parameter Estimation"
-    },
-    {
-        "link": "http://www.volvocars.com/intl/about/our-company/careers/job-search/jobs/rd16027",
-        "location": "Gothenburg , Sweden",
-        "title": "Thesis Work: Material trends in passenger cars"
-    },
-    {
-        "link": "http://www.volvocars.com/intl/about/our-company/careers/job-search/jobs/rd16044",
-        "location": "Gothenburg , Sweden",
-        "title": "Thesis Work: Cabin air quality - Particles"
+        "title": "Expression of interest - Thesis Project Finland",
+        "img": "images/logos/billerud.png"
     }
 ]

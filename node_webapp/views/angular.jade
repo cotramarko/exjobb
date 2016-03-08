@@ -5,6 +5,8 @@ block scripts
     //link(rel='stylesheet', href='/stylesheets/grid.css')
     link(rel='stylesheet', href='/stylesheets/dashboard.css')
     link(rel='stylesheet', href='/stylesheets/exjobb.css')
+    script(src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.0/angular.min.js")
+    script(src='/javascripts/exlistcontroller.js')
 
 block content
     .container
@@ -55,35 +57,42 @@ block content
           // /.nav-collapse
         // /.container-fluid
 
-    .container
-      
-        
-        h1.page-header Allaexjobb.Naow
+    .container(ng-app='myApp', ng-controller='exjobbCtrl')
+      .jumbotron.bkimg
+          form.navbar-form.navbar-center(role='search', align='center', style='padding-top:60px')
+                .form-group
+                  input.form-control(type='text', placeholder='Ort, ämne, företag...', ng-model='query')
+          div
+            br 
+            br
 
-            .panel.panel-default
-                .panel-heading
-                  .panel-title Lista över Exjobb
-                .panel-body
-                  
-                    
-                        each kw in data
-                          .row.exjobb
-                              a(href=kw.link)
-                                //- .col-md-2.col-xs-12
-                                //-   .spot_img
-                                //-     img(src=kw.img)
-                                .col-md-4.col-xs-12
-                                  | <b>#{kw.company}</b>
-                                  br
-                                  | #{kw.title}
-                                .col-md-4.col-xs-12 <br>#{kw.location}
-                          hr
-                                    
-          h2.sub-header Section title
-        .page-links(align="center")
-          - var n = 1
-            while n < page_counter+1
+          
+
+       
+      .panel.panel-default
+          .panel-heading
+            .panel-title Lista över Exjobb
+          .panel-body
+            
+            
+            
+              | Antal träffar: {{result.length}}
+
+              // {'company' : lastName} as result // Alternativ filtrering utan custom fuction
+              div(ng-repeat="x in myWelcome | filter : filterList as result")
+            
               
-              a(href='/exjobb?page='+ n) #{n++}
-              if n < (page_counter+1)
-                |  - 
+            
+                  .row.exjobb
+                      a(href = "{{x.link}}")
+                        .col-md-4.col-xs-12
+                          | <b>{{x.company}}</b>
+                          br
+                          | {{x.title}}
+                        .col-md-4.col-xs-12 <br>{{x.location}}
+                  hr
+                                  
+      h2.sub-header Section title
+
+
+    

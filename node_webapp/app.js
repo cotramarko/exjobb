@@ -37,31 +37,43 @@ app.get('/', function(req, res) {res.render('index', { title: 'Express', scripts
 app.get('/home', function(req, res) {res.render('home', { title: 'Metro GUI', scripts: ['javascripts/home.js']});
 });
 
-app.get('/boot', function(req, res) {res.render('boot', { title: 'Metro GUI'});
-});
-
 app.get('/list', function(req, res) {
-    
-//     var db = require('mongoskin').db('mongodb://localhost:27017/transport');
-
-//     db.collection('transport').find({}, { _id:0}).toArray(function(err, result) {
-//     if (err) throw err;
-//     var foo = 'hej';
-//     console.log(result);
-//     res.render('list', {data : result});
-// });
-      
-  var json = JSON.parse(require('fs').readFileSync('./public/exjobb.json', 'utf8'))
-      
-      res.render('list', {data : json});
+          
+  // var json = JSON.parse(require('fs').readFileSync('./public/exjobb.json', 'utf8'))
+  var db = require('mongoskin').db('mongodb://localhost:27017/exjobb');
+  var coll = db.collection('dataset');
+    coll.find({}, { _id:0}).toArray(function(err, result) {
+      if (err) throw err;    
+      res.send(result);
+    });
 
 });
 
 app.get('/exjobb', function(req, res) {
       
-  var json = JSON.parse(require('fs').readFileSync('./public/exjobb.json', 'utf8'))
-      
-      res.render('exjobb', {data : json});
+//  var json = JSON.parse(require('fs').readFileSync('./public/exjobb.json', 'utf8'))
+    var db = require('mongoskin').db('mongodb://localhost:27017/exjobb');
+
+    var page = req.query.page;
+    var results_per_page = 5;
+    var offset = page*results_per_page;
+    console.log(page);
+    var coll = db.collection('dataset');
+    coll.find({}, { _id:0}).skip(offset).limit(results_per_page).toArray(function(err, result) {
+      if (err) throw err;
+      //console.log(result);
+
+      coll.find({}, { _id:0}).count(function(err, count) {
+          console.log(Math.floor(count/results_per_page));
+    
+
+          res.render('exjobb', {data : result, page_counter : Math.floor(count/results_per_page)});
+
+      });
+    
+});      
+
+
 
 });
 
@@ -73,46 +85,13 @@ app.get('/marko', function(req, res) {
 
 });
 
-
-
-/*app.get('/searching', function(req, res){
-res.send('Hello')
- // input value from search
- var val = req.query.search;
- console.log(val);
-
-// testing the route
-// res.send("WHEEE");
-
-});
-*/
-app.post('/searching', function(req, res) {
-    console.log("post received: %s %s");
-    var name = req.body.name;
-    var db = require('mongoskin').db('mongodb://localhost:27017/transport');
-    
-
-
-db.collection('transport').insert({time: req.body.time , from: req.body.from , dest: req.body.dest, team: req.body.team, car: req.body.car }, function(err, result) {
-    if (err) throw err;
-    if (result) console.log('Added!');
-});
-
-
-    console.log(name);
-    res.send('success')
+app.get('/angular', function(req, res) {
+      
+      res.render('angular', {});
 
 });
 
-app.get('/transport', function(req, res) {
-    
-    var db = require('mongoskin').db('mongodb://localhost:27017/transport');
 
-    db.collection('transport').find({}, {time:1, car:1, _id:0}).toArray(function(err, result) {
-    if (err) throw err;
-    res.send(result);
-});
-});
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
@@ -147,3 +126,13 @@ app.use(function(err, req, res, next) {
 
 
 module.exports = app;
+
+//     var db = require('mongoskin').db('mongodb://localhost:27017/transport');
+
+//     db.collection('transport').find({}, { _id:0}).toArray(function(err, result) {
+//     if (err) throw err;
+//     var foo = 'hej';
+//     console.log(result);
+//     res.render('list', {data : result});
+// });
+

@@ -1,0 +1,9 @@
+  var from = $("input#from").val();
+  var dest = $("input#dest").val();
+  var time = $("select#time").val();
+  var team = $("select#team").val();
+  var car = $("select#car").val();
+
+  var dataString = 'name='+ name + '&email=' + email + '&phone=' + phone 
+  + '&from=' + from + '&dest=' + dest + '&time=' + time + '&team=' team + '&car=' + car;
+  // alert (dataString);return false;

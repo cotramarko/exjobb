@@ -1,0 +1,61 @@
+.bkimg {
+    background-image: url(/p1.jpg);
+    background-size: cover;
+    background-position: 25%;
+    
+            border:2px solid black;
+            height:200px;
+
+    
+}
+
+td {
+  text-align: left;
+}
+
+.panel-title {
+    text-align: left;
+}
+
+@media all {
+.spot_img img {
+    max-width: 70px;
+    max-height: 70px;
+}
+
+.spot_img {
+    margin: 0px 40px 0 0;
+    width: 120px;
+    vertical-align: middle;
+    line-height: 68px;
+    min-height: 0;
+
+}
+
+@media (min-width: 768px) {
+  .spot_img img {
+    max-width: 120px;
+
+}
+}
+body {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.navbar {
+  margin-bottom: 20px;
+}
+
+.panel-body {
+    font-size: 12px;
+}
+
+.exjobb {
+    padding-top: 10px;
+}
+
+.page-links {
+  text-align: center;
+  border-width: 4px;
+}

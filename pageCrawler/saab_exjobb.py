@@ -10,34 +10,31 @@ import time
 import os
 import re
 
+from readability.readability import Document
 
 chromedriver = "/Users/fredrikjacobson/Desktop/code/chromedriver" #change to local chromedriver location
 os.environ["webdriver.chrome.driver"] = chromedriver
 browser = webdriver.Chrome(chromedriver)
 
-browser.get("https://xjobs.brassring.com/TGWebHost/searchresults.aspx?partnerid=25079&siteid=5171&Codes=Volvo&AgentID=9780452&Function=runquery")
+browser.get("http://saabgroup.com/sv/career/job-opportunities/?&c=Sweden")
 
-COMPANY = "Volvo Group"
+COMPANY = "SAAB"
 #element = browser.find_element_by_xpath("""//*[@id="top"]/div/div[2]/div[5]/div[4]/p[2]/a/strong""")
 #browser.execute_script("return arguments[0].scrollIntoView();", element)
 
-time.sleep(0.3)
-table = browser.find_element_by_id('idSearchresults')
-table_rows = table.find_elements_by_tag_name('tr')
 
+table = browser.find_element_by_class_name('vacancies')
+table_rows = table.find_elements_by_tag_name('li')
 
 for row in table_rows:
-    row.text
-    if 'thesis' in row.text.lower():
-        
-        title = row.find_element_by_tag_name('a')
-        location = row.find_element_by_xpath('./td[2]')
-        if 'sweden' in location.text.lower():
-            continue
-        date = row.find_element_by_xpath('./td[3]')
+    if 'examen' in row.text.lower():
+        print(row.text)
+        title = find_element_by_class_name('title')
+        location = find_elements_by_tag_name('location')
+        date = find_element_by_class_name('date')
         link = title.get_attribute('href')
 
-        print('Title: {}\nDate: {}\nLocation: {}\nLink: {}\n\n'.format(title.text, date.text, location.text, link))
+
 #        list_of_thesis.append(dict(title= title.text, location = location.text, link=title.get_attribute('href')))
 
 

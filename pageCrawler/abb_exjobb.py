@@ -9,9 +9,9 @@ from selenium.webdriver.common.by import By
 import time
 import os
 
-import json_append
+PATH = os.environ["PATH"].split(':',1)[0]
 
-chromedriver = "/Users/fredrikjacobson/Desktop/code/chromedriver" #change to local chromedriver location
+chromedriver = PATH + "/chromedriver" #change to local chromedriver location
 os.environ["webdriver.chrome.driver"] = chromedriver
 browser = webdriver.Chrome(chromedriver)
 
@@ -41,4 +41,5 @@ for l in job_list:
     list_of_thesis.append(dict(title= title.text, location = location.text, link=title.get_attribute('href')))
 
 if list_of_thesis:
-    json_append.update_json(list_of_thesis)
+    #json_append.update_json(list_of_thesis)
+    pass

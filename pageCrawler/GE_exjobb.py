@@ -8,7 +8,6 @@ from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.common.by import By
 import time
 import os
-import re
 
 PATH = os.environ["PATH"].split(':',1)[0]
 

@@ -10,8 +10,9 @@ import time
 import os
 import re
 
+PATH = os.environ["PATH"].split(':',1)[0]
 
-chromedriver = "/Users/fredrikjacobson/Desktop/code/chromedriver" #change to local chromedriver location
+chromedriver = PATH + "/chromedriver" #change to local chromedriver location
 os.environ["webdriver.chrome.driver"] = chromedriver
 browser = webdriver.Chrome(chromedriver)
 

@@ -18,7 +18,9 @@ from json_append import *
 
 from readability.readability import Document
 
-chromedriver = "/Users/fredrikjacobson/Desktop/code/chromedriver" #change to local chromedriver location
+PATH = os.environ["PATH"].split(':',1)[0]
+
+chromedriver = PATH + "/chromedriver" #change to local chromedriver location
 os.environ["webdriver.chrome.driver"] = chromedriver
 browser = webdriver.Chrome(chromedriver)
 

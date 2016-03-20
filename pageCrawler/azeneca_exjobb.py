@@ -1,5 +1,4 @@
 import browserobject
-
 browser = browserobject.start_browser("http://jobs.astrazeneca.com")
 
 

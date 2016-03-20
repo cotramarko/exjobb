@@ -1,24 +1,6 @@
-from selenium import webdriver
+import browserobject
 
-from selenium.webdriver.support.ui import WebDriverWait, Select
-from selenium.webdriver.support import expected_conditions as EC
-from selenium.common.exceptions import TimeoutException
-from selenium.webdriver.common.action_chains import ActionChains
-from selenium.webdriver.common.keys import Keys
-from selenium.webdriver.common.by import By
-import time
-import os
-import re
-
-from readability.readability import Document
-
-PATH = os.environ["PATH"].split(':',1)[0]
-
-chromedriver = PATH + "/chromedriver" #change to local chromedriver location
-os.environ["webdriver.chrome.driver"] = chromedriver
-browser = webdriver.Chrome(chromedriver)
-
-browser.get("http://saabgroup.com/sv/career/job-opportunities/?&c=Sweden")
+browser = browserobject.start_browser("http://saabgroup.com/sv/career/job-opportunities/?&c=Sweden")
 
 COMPANY = "SAAB"
 #element = browser.find_element_by_xpath("""//*[@id="top"]/div/div[2]/div[5]/div[4]/p[2]/a/strong""")

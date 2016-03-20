@@ -1,24 +1,7 @@
-from selenium import webdriver
-
-from selenium.webdriver.support.ui import WebDriverWait, Select
-from selenium.webdriver.support import expected_conditions as EC
-from selenium.common.exceptions import TimeoutException
-from selenium.webdriver.common.action_chains import ActionChains
-from selenium.webdriver.common.keys import Keys
-from selenium.webdriver.common.by import By
-import time
-import os
+import browserobject
 import re
 
-import json_append
-
-PATH = os.environ["PATH"].split(':',1)[0]
-
-chromedriver = PATH + "/chromedriver" #change to local chromedriver location
-os.environ["webdriver.chrome.driver"] = chromedriver
-browser = webdriver.Chrome(chromedriver)
-
-browser.get("https://boliden.csod.com/ats/careersite/search.aspx?site=5&c=boliden")
+browser = browserobject.start_browser("https://boliden.csod.com/ats/careersite/search.aspx?site=5&c=boliden")
 baseurl = "https://boliden.csod.com/ats/careersite/JobDetails.aspx?id="
 
 #job_list = browser.find_elements_by_tag_name('''li''')
@@ -45,4 +28,4 @@ for l in job_list:
     browser.quit()
 
 if list_of_thesis:
-    json_append.update_json(list_of_thesis)
+    pass

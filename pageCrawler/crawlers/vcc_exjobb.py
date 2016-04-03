@@ -6,11 +6,14 @@ import time
 
 sys.path.insert(1, os.path.join(sys.path[0], '..'))
 
+from CrawlerData import CrawlerData
 from json_append import *
-from readability.readability import Document
+#from readability.readability import Document
 
 
-
+a = CrawlerData
+a.title = "hej"
+print(a.title)
 
 browser = browserobject.start_browser("http://www.volvocars.com/intl/about/our-company/careers/job-search")
 job_list = browser.find_elements_by_xpath("""//*[@id="volvo"]/div[3]/div/div""")

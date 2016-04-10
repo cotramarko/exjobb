@@ -17,13 +17,14 @@ def crawl():
             title = row.find_element_by_class_name('title')
             location = row.find_element_by_class_name('location')
             date = row.find_element_by_class_name('date')
-            link = title.get_attribute('href')
+            link = row.find_element_by_tag_name('a')
 
 
-            list_of_thesis.append(dict(title= title.text, location = location.text, link=title.get_attribute('href'), company = COMPANY))
+            list_of_thesis.append(dict(title= title.text, location = location.text, link=link.get_attribute('href'), company = COMPANY))
 
     if list_of_thesis:
-        browser.quit()
+        #browser.quit()
+        print(list_of_thesis)
         return list_of_thesis
     else:
         return []

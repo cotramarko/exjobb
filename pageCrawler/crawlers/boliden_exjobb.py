@@ -1,8 +1,8 @@
 import browserobject
 import re
 
-def crawl():
-    browser = browserobject.start_browser("https://boliden.csod.com/ats/careersite/search.aspx?site=5&c=boliden")
+def crawl(test = False):
+    browser = browserobject.start_browser("https://boliden.csod.com/ats/careersite/search.aspx?site=5&c=boliden", test)
     baseurl = "https://boliden.csod.com/ats/careersite/JobDetails.aspx?id="
     COMPANY = 'Boliden'
     #job_list = browser.find_elements_by_tag_name('''li''')
@@ -30,6 +30,7 @@ def crawl():
         browser.quit()
         return list_of_thesis
     else:
+        if not test: browser.quit()
         return []
 
 if __name__ == '__main__':

@@ -3,8 +3,8 @@ import os
 from selenium.common.exceptions import NoSuchElementException
 import sys
 
-def crawl():
-    browser = browserobject.start_browser("https://skf.tms.hrdepartment.com/cgi-bin/a/searchjobs_quick.cgi?kand=thesis&country=&qty=25&sj=1&order=jobs.timedate+DESC&search=Search+Jobs")
+def crawl(test = False):
+    browser = browserobject.start_browser("https://skf.tms.hrdepartment.com/cgi-bin/a/searchjobs_quick.cgi?kand=thesis&country=&qty=25&sj=1&order=jobs.timedate+DESC&search=Search+Jobs", test)
     #browser = browserobject.start_browser("https://skf.tms.hrdepartment.com/cgi-bin/a/searchjobs_quick.cgi?kand=thesis&geog=custom__59&country=&qty=25&sj=1&order=jobs.timedate+DESC&search=Search+Jobs")
 
     COMPANY = "SKF"
@@ -39,6 +39,7 @@ def crawl():
         browser.quit()
         return list_of_thesis
     else:
+        if not test: browser.quit()
         return []
 
 

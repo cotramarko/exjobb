@@ -2,8 +2,8 @@ import browserobject
 import time
 from selenium.common.exceptions import NoSuchElementException
 
-def crawl():
-    browser = browserobject.start_browser("http://www.afconsult.com/sv/jobba-hos-oss/lediga-jobb/")
+def crawl(test = False):
+    browser = browserobject.start_browser("http://www.afconsult.com/sv/jobba-hos-oss/lediga-jobb/", test)
     COMPANY = 'ÅF'
     list_of_thesis = []
     time.sleep(1)    #might need to explicitly wait for website to load
@@ -28,16 +28,19 @@ def crawl():
 
                 list_of_thesis.append(dict(title= title.text, location = location.text, link=link.get_attribute('href'), company = COMPANY))
     except NoSuchElementException:
-        print('nothing available')
+        #print('nothing available')
+        pass
 
     
 
     if list_of_thesis:
         return list_of_thesis
+        browser.quit()
     else:
+        if not test: browser.quit()
         return []
 
-    browser.quit()
+    
 
 if __name__ == '__main__':
     crawl()

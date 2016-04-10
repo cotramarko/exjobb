@@ -1,7 +1,7 @@
 import browserobject
 
-def crawl():
-    browser = browserobject.start_browser("https://jobs.ericsson.com/search/?q=&locationsearch=sweden")
+def crawl(test = False):
+    browser = browserobject.start_browser("https://jobs.ericsson.com/search/?q=&locationsearch=sweden", test)
 
     COMPANY = "Ericsson"
 
@@ -38,6 +38,7 @@ def crawl():
         browser.quit()
         return list_of_thesis
     else:
+        if not test: browser.quit()
         return []
 
 if __name__ == '__main__':

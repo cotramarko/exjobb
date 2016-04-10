@@ -1,8 +1,8 @@
 import browserobject
 import time
 
-def crawl():
-    browser = browserobject.start_browser("http://jobs.astrazeneca.com")
+def crawl(test = False):
+    browser = browserobject.start_browser("http://jobs.astrazeneca.com", test)
     COMPANY = 'Astra Zeneca'
 
     #element = browser.find_element_by_xpath("""//*[@id="top"]/div/div[2]/div[5]/div[4]/p[2]/a/strong""")
@@ -31,6 +31,7 @@ def crawl():
         browser.quit()
         return list_of_thesis
     else:
+        if not test: browser.quit()
         return []
     
     

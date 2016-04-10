@@ -1,7 +1,7 @@
 import browserobject
 
-def crawl():
-    browser = browserobject.start_browser("http://www.billerudkorsnas.com/sv/Karriar/Lediga-jobb/Exjobb2/")
+def crawl(test = False):
+    browser = browserobject.start_browser("http://www.billerudkorsnas.com/sv/Karriar/Lediga-jobb/Exjobb2/", test)
     COMPANY = 'Billerud'
 
     job_list = browser.find_elements_by_xpath('''//*[@id="primarycontent"]/article/table/tbody/tr''')
@@ -20,6 +20,7 @@ def crawl():
         browser.quit()
         return list_of_thesis
     else:
+        if not test: browser.quit()
         return []
     
 

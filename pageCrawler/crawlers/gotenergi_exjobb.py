@@ -1,8 +1,8 @@
 import browserobject
 import time
 
-def crawl():
-    browser = browserobject.start_browser("http://www.goteborgenergi.se/Om_oss/Karriar/Student/Examensarbete")
+def crawl(test = False):
+    browser = browserobject.start_browser("http://www.goteborgenergi.se/Om_oss/Karriar/Student/Examensarbete", test)
 
     COMPANY = "Göteborgs Energi"
     time.sleep(0.3)
@@ -24,6 +24,7 @@ def crawl():
         browser.quit()
         return list_of_thesis
     else:
+        if not test: browser.quit()
         return []
 
 

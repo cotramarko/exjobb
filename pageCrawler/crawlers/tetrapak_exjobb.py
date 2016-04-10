@@ -1,8 +1,8 @@
 import browserobject
 import time
 
-def crawl():
-    browser = browserobject.start_browser("https://tetrapak.taleo.net/careersection/3/jobsearch.ftl?lang=en")
+def crawl(test = False):
+    browser = browserobject.start_browser("https://tetrapak.taleo.net/careersection/3/jobsearch.ftl?lang=en", test)
 
     COMPANY = "Tetra Pak"
     list_of_thesis = []
@@ -30,6 +30,7 @@ def crawl():
         browser.quit()
         return list_of_thesis
     else:
+        if not test: browser.quit()
         return []
 
 if __name__ == '__main__':

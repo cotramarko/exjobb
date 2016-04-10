@@ -1,7 +1,7 @@
 import browserobject
 
-def crawl():
-    browser = browserobject.start_browser("http://corporate.vattenfall.se/jobba-hos-oss/jobb/lediga-jobb/?country=Sweden&location=&function=&position=Internship&education=")
+def crawl(test = False):
+    browser = browserobject.start_browser("http://corporate.vattenfall.se/jobba-hos-oss/jobb/lediga-jobb/?country=Sweden&location=&function=&position=Internship&education=", test)
 
     COMPANY = "Vattenfall"
     list_of_thesis = []
@@ -27,6 +27,7 @@ def crawl():
         browser.quit()
         return list_of_thesis
     else:
+        if not test: browser.quit()
         return []
 
 if __name__ == '__main__':

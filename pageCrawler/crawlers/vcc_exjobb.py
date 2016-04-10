@@ -1,3 +1,4 @@
+
 # -*- coding: utf-8 -*-
 import browserobject
 import sys
@@ -11,13 +12,13 @@ from json_append import *
 #from readability.readability import Document
 
 
-a = CrawlerData
-a.title = "hej"
-print(a.title)
+# a = CrawlerData
+# a.title = "hej"
+# print(a.title)
 
-def crawl():
+def crawl(test = False):
 
-    browser = browserobject.start_browser("http://www.volvocars.com/intl/about/our-company/careers/job-search")
+    browser = browserobject.start_browser("http://www.volvocars.com/intl/about/our-company/careers/job-search", test)
     job_list = browser.find_elements_by_xpath("""//*[@id="volvo"]/div[3]/div/div""")
     COMPANY = 'Volvo Cars'
 
@@ -59,6 +60,7 @@ def crawl():
             browser.quit()
             return list_of_thesis
     else:
+        if not test: browser.quit()
         return []
 
 if __name__ == '__main__':

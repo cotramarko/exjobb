@@ -1,8 +1,8 @@
 import browserobject
 import time
 
-def crawl():
-    browser = browserobject.start_browser("https://xjobs.brassring.com/TGWebHost/searchresults.aspx?partnerid=25079&siteid=5171&Codes=Volvo&AgentID=9780452&Function=runquery")
+def crawl(test = False):
+    browser = browserobject.start_browser("https://xjobs.brassring.com/TGWebHost/searchresults.aspx?partnerid=25079&siteid=5171&Codes=Volvo&AgentID=9780452&Function=runquery", test)
     url = 'https://xjobs.brassring.com/TGWebHost/searchresults.aspx?partnerid=25079&siteid=5171&Codes=Volvo&AgentID=9780452&Function=runquery'
     COMPANY = "Volvo Group"
     list_of_thesis = []
@@ -29,10 +29,10 @@ def crawl():
             list_of_thesis.append(dict(title= title.text, location = location.text, company = COMPANY, link=url))
 
     if list_of_thesis:
-        #browser.quit()
-        print(list_of_thesis)
+        browser.quit()
         return list_of_thesis
     else:
+        if not test: browser.quit()
         return []
 
 

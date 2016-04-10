@@ -1,7 +1,7 @@
 import browserobject
 
-def crawl():
-    browser = browserobject.start_browser("http://jobs.gecareers.com/search?q=thesis")
+def crawl(test = False):
+    browser = browserobject.start_browser("http://jobs.gecareers.com/search?q=thesis", test)
 
     COMPANY = "General Electric"
     list_of_thesis = []
@@ -25,6 +25,7 @@ def crawl():
         browser.quit()
         return list_of_thesis
     else:
+        if not test: browser.quit()
         return []
 
 

@@ -2,8 +2,8 @@ import browserobject
 from selenium.common.exceptions import WebDriverException
 import time
 
-def crawl():
-    browser = browserobject.start_browser("http://www.sweco.se/karriar/lediga-jobb/")
+def crawl(test = False):
+    browser = browserobject.start_browser("http://www.sweco.se/karriar/lediga-jobb/", test)
 
     COMPANY = "Sweco"
     list_of_thesis = []
@@ -16,7 +16,8 @@ def crawl():
             more_jobs_button.click()
             time.sleep(0.2) #delay to wait for content to load
     except WebDriverException:
-        print('all jobs naow')
+        #print('all jobs naow')
+        pass
 
     
     table = browser.find_element_by_class_name('jobsearchresult__table')
@@ -42,6 +43,7 @@ def crawl():
         browser.quit()
         return list_of_thesis
     else:
+        if not test: browser.quit()
         return []
 
 

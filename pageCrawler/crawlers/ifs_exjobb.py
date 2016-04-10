@@ -1,7 +1,7 @@
 import browserobject
 
-def crawl():
-    browser = browserobject.start_browser("http://www.ifsworld.com/se/verksamheten/arbeta-hos-oss/lediga-jobb/apply-for-a-job/")
+def crawl(test = False):
+    browser = browserobject.start_browser("http://www.ifsworld.com/se/verksamheten/arbeta-hos-oss/lediga-jobb/apply-for-a-job/", test)
 
     COMPANY = "IFS"
 
@@ -27,6 +27,7 @@ def crawl():
         browser.quit()
         return list_of_thesis
     else:
+        if not test: browser.quit()
         return []
 
 

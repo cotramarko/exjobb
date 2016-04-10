@@ -1,7 +1,7 @@
 import browserobject
 
-def crawl():
-    browser = browserobject.start_browser("http://saabgroup.com/sv/career/job-opportunities/?&c=Sweden")
+def crawl(test = False):
+    browser = browserobject.start_browser("http://saabgroup.com/sv/career/job-opportunities/?&c=Sweden", test)
 
     COMPANY = "SAAB"
     #element = browser.find_element_by_xpath("""//*[@id="top"]/div/div[2]/div[5]/div[4]/p[2]/a/strong""")
@@ -23,10 +23,10 @@ def crawl():
             list_of_thesis.append(dict(title= title.text, location = location.text, link=link.get_attribute('href'), company = COMPANY))
 
     if list_of_thesis:
-        #browser.quit()
-        print(list_of_thesis)
+        browser.quit()
         return list_of_thesis
     else:
+        if not test: browser.quit()
         return []
 
             

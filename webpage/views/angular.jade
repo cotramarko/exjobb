@@ -3,15 +3,30 @@ extends layout
 block scripts
     link(href='/stylesheets/css/bootstrap.min.css', rel='stylesheet')
     //link(rel='stylesheet', href='/stylesheets/grid.css')
-    link(rel='stylesheet', href='/stylesheets/dashboard.css')
+    //link(rel='stylesheet', href='/stylesheets/dashboard.css')
+    
+    
+    
+
+    // Angular Material requires Angular.js Libraries
+    link(rel='stylesheet', href='http://ajax.googleapis.com/ajax/libs/angular_material/1.1.0-rc2/angular-material.min.css')
+    script(src='http://ajax.googleapis.com/ajax/libs/angularjs/1.5.3/angular.min.js')
+    script(src='http://ajax.googleapis.com/ajax/libs/angularjs/1.5.3/angular-animate.min.js')
+    script(src='http://ajax.googleapis.com/ajax/libs/angularjs/1.5.3/angular-aria.min.js')
+    script(src='http://ajax.googleapis.com/ajax/libs/angularjs/1.5.3/angular-messages.min.js')
+    // Angular Material Library
+    script(src='http://ajax.googleapis.com/ajax/libs/angular_material/1.1.0-rc2/angular-material.min.js')
+    // Your application bootstrap
     link(rel='stylesheet', href='/stylesheets/exjobb.css')
-    script(src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.0/angular.min.js")
+    //script(type='text/javascript', src='/javascripts/searchbar.js')
     script(src='/javascripts/exlistcontroller.js')
 
-block content
-    .container
+
+block header
+    header.container-fluid
       // Static navbar
-      nav.navbar.navbar-default
+
+      nav.navbar.navbar
         .container-fluid
           .navbar-header
             button.navbar-toggle.collapsed(type='button', data-toggle='collapse', data-target='#navbar', aria-expanded='false', aria-controls='navbar')
@@ -57,42 +72,61 @@ block content
           // /.nav-collapse
         // /.container-fluid
 
-    .container(ng-app='myApp', ng-controller='exjobbCtrl')
-      .jumbotron.bkimg
-          form.navbar-form.navbar-center(role='search', align='center', style='padding-top:60px')
-                .form-group
-                  input.form-control(type='text', placeholder='Ort, ämne, företag...', ng-model='query')
-          div
-            br 
-            br
+block content
+  body(ng-app='myApp', ng-cloak='')
+    
 
+
+    
+      .jumbotron.bkimg(ng-controller='exjobbCtrl')
+        .container-fluid
           
+          div.container(ng-controller='DemoCtrl as ctrl', layout='column', ng-cloak='' style="width:30%;")
+            md-content.md-padding(style="align-items:center;justify-content:center;background:none;")
+              form(ng-submit='$event.preventDefault()')
+                //- p
+                //-   | Use 
+                //-   code md-autocomplete
+                //-   |  to search for matches from local or remote data sources.
+                md-autocomplete(ng-disabled='ctrl.isDisabled', md-no-cache='ctrl.noCache', md-selected-item='ctrl.selectedItem', md-search-text-change='ctrl.searchTextChange(ctrl.searchText)', md-search-text='ctrl.searchText', md-selected-item-change='ctrl.selectedItemChange(item)', md-items='item in ctrl.querySearch(ctrl.searchText)', md-item-text='item.display', md-min-length='1', placeholder='Ort, ämne, företag...')
+                  md-item-template
+                    md-subheader.md-no-sticky 2 line item
+                      span(md-highlight-text='ctrl.searchText', md-highlight-flags='^i') {{item.display}}
+                div.searchBox(ng-show="showLocation == true")
+                  p(ng-bind='Location' ng-model='locationBox')
 
-       
-      .panel.panel-default
-          .panel-heading
-            .panel-title Lista över Exjobb
-          .panel-body
-            
-            
-            
-              | Antal träffar: {{result.length}}
-
-              // {'company' : lastName} as result // Alternativ filtrering utan custom fuction
-              div(ng-repeat="x in myWelcome | filter : filterList as result")
-            
+                //- form(role='search', align='center', style='padding-top:60px')
+                //-       .form-group
+                //-         input.form-control(type='text', placeholder='Ort, ämne, företag...', ng-model='query', style="float: none; margin: 0 auto;")        
+                //-   div
+                //-     br 
+                //-     br
+          
+        .panel
+            .panel-heading
+              .panel-title Lista över Exjobb
+            .panel-body
               
-            
-                  .row.exjobb
-                      a(href = "{{x.link}}")
-                        .col-md-4.col-xs-12
-                          | <b>{{x.company}}</b>
-                          br
-                          | {{x.title}}
-                        .col-md-4.col-xs-12 <br>{{x.location}}
-                  hr
+              
+              
+                | Antal träffar: {{result.length}}
+                hr
+
+                // {'company' : lastName} as result // Alternativ filtrering utan custom fuction
+                div(ng-repeat="x in myWelcome | filter : filterList as result")
+              
+                
+              
+                    .row.exjobb
+                        a(href = "{{x.link}}")
+                          .col-md-4.col-xs-12
+                            | <b>{{x.company}}</b>
+                            br
+                            | {{x.title}}
+                          .col-md-4.col-xs-12 <br>{{x.location}}
+                    hr
                                   
-      h2.sub-header Section title
+      //h2.sub-header Section title
 
 
     

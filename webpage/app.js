@@ -42,7 +42,7 @@ app.get('/list', function(req, res) {
   // var json = JSON.parse(require('fs').readFileSync('./public/exjobb.json', 'utf8'))
   var db = require('mongoskin').db('mongodb://localhost:27017/exjobb');
   var coll = db.collection('dataset');
-    coll.find({}, { _id:0}).toArray(function(err, result) {
+    coll.find({inactive: { $ne: true }}, { _id:0}).toArray(function(err, result) {
       if (err) throw err;    
       res.send(result);
     });
@@ -91,6 +91,11 @@ app.get('/angular', function(req, res) {
 
 });
 
+app.get('/search', function(req, res) {
+      
+      res.render('complete', {});
+
+});
 
 
 // catch 404 and forward to error handler
